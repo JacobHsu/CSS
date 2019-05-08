@@ -1,6 +1,6 @@
 {
   "logo": {
-    "text": "Hexo Doc Theme Seed",
+    "text": "Hello CSS",
     "type": "link",
     "path": "index.html"
   },
@@ -13,6 +13,21 @@
       "text": "UI",
       "type": "link",
       "path": "swagger/ui.html"
+    },
+    {
+      "text": "Position",
+      "type": "link",
+      "path": "position.html"
+    },
+    {
+      "text": "Display",
+      "type": "link",
+      "path": "display.html"
+    },
+    {
+      "text": "vertical-align",
+      "type": "link",
+      "path": "swagger/vertical-align.html"
     },
     {
       "text": "To HTML",
