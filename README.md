@@ -29,3 +29,8 @@ deploy:
 
 `$hexo d` ERROR Deployer not found: git  
 > npm install hexo-deployer-git --save  
+
+實在不行，就把它刪掉，然後重新生成和部署。
+`rm -rf .deploy_git`  
+`hexo g`  
+`hexo d`  
