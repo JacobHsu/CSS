@@ -25,6 +25,11 @@
       "path": "display.html"
     },
     {
+      "text": "Display",
+      "type": "link",
+      "path": "display.html"
+    },
+    {
       "text": "vertical-align",
       "type": "link",
       "path": "swagger/vertical-align.html"
