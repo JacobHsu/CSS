@@ -40,6 +40,11 @@
       "path": "qa.html"
     },
     {
+      "text": "Tool",
+      "type": "link",
+      "path": "tools.html"
+    },
+    {
       "text": "SUPPORT AND FEEDBACK",
       "type": "label"
     },
