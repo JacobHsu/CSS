@@ -15,6 +15,11 @@
       "path": "swagger/ui.html"
     },
     {
+      "text": "Tutorial",
+      "type": "link",
+      "path": "tutorial.html"
+    },
+    {
       "text": "Position",
       "type": "link",
       "path": "position.html"

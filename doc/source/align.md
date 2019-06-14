@@ -3,7 +3,7 @@ title: 居中
 
 ### 水平居中對齊
 
-要水平居中對齊一個元素(如 <div>), 可以使用 `margin: auto;`
+要水平居中對齊一個元素, 可以使用 `margin: auto;`
 
 ```css
 #main {
