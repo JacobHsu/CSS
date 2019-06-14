@@ -35,6 +35,11 @@
       "path": "align.html"
     },
     {
+      "text": "Scss",
+      "type": "link",
+      "path": "scss.html"
+    },
+    {
       "text": "vertical-align",
       "type": "link",
       "path": "swagger/vertical-align.html"
