@@ -45,6 +45,11 @@
       "path": "swagger/vertical-align.html"
     },
     {
+      "text": "MDN",
+      "type": "link",
+      "path": "MDN.html"
+    },
+    {
       "text": "QA",
       "type": "link",
       "path": "qa.html"
