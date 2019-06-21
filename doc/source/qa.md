@@ -21,3 +21,7 @@ title: QA
 .divcss{ border:1px solid #000; width:300px; height:100px; overflow:hidden} 
 .divcss img{max-width:300px;}
 ```
+
+## radio
+[CSS: how to make label appear right of the radio?](https://stackoverflow.com/questions/10022363/css-how-to-make-label-appear-right-of-the-radio)  
+[Hide radio button while keeping its functionality](https://stackoverflow.com/questions/29346385/hide-radio-button-while-keeping-its-functionality)  
