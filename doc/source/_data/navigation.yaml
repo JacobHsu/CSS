@@ -55,6 +55,11 @@
       "path": "qa.html"
     },
     {
+      "text": "Font Awesome",
+      "type": "link",
+      "path": "fontawesome.html"
+    },
+    {
       "text": "Tool",
       "type": "link",
       "path": "tools.html"
