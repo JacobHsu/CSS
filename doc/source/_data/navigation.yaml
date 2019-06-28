@@ -60,6 +60,11 @@
       "path": "fontawesome.html"
     },
     {
+      "text": "Bootstrap",
+      "type": "link",
+      "path": "bootstrap.html"
+    },
+    {
       "text": "Tool",
       "type": "link",
       "path": "tools.html"
