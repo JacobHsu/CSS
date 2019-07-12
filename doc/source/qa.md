@@ -1,6 +1,13 @@
 title: QA
 ---
 
+網頁文字單位，px、em、rem、% 的差別
+
+哪一個是絕對單位？哪一個是相對單位？
+px 是絕對單位；
+em 是相對單位，其文字大小是相對於父元素 (parent element)；
+rem 是相對單位，其文字大小是相對於根元素 (root element)，根元素就是 <html> 標籤
+
 ## [保持正圓或正方形的圖片](https://zoneless.blog/2017/06/17/css-responsive-circle-or-square-image/)  
 
 ```css

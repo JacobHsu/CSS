@@ -1,6 +1,8 @@
 title: Bootstrap class
 ---
 
+`w-75` [Sizing](https://getbootstrap.com/docs/4.3/utilities/sizing/)  
+
 [text-black-50](https://bootstrapshuffle.com/classes/text/text-black-50)   
 
 
