@@ -26,6 +26,8 @@ static 是預設值。任何套用 position: static; 的元素「不會被特別
 
 `fixed（固定定位）`的元素會相對於**瀏覽器視窗**來定位，這意味著即便頁面捲動，它還是會固定在相同的位置。和 relative 一樣，我們會使用`top,right,bottom,left`屬性來定位。
 
+應用 可用於 banner關閉按鈕
+
 ## absolute
 
 `absolute（絕對定位）`：生成絕對定位的元素，相對於 **static 定位以外的第一個父元素**進行定位。元素的位置通過`top,bottom,left,right`屬性進行規定。可通過`z-index`進行層次分級。
