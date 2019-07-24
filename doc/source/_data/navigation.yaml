@@ -50,6 +50,11 @@
       "path": "flex.html"
     },
     {
+      "text": "Font",
+      "type": "link",
+      "path": "font.html"
+    },
+    {
       "text": "MDN",
       "type": "link",
       "path": "MDN.html"
