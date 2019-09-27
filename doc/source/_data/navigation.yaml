@@ -87,6 +87,15 @@
       "text": "Raise an Issue on Github",
       "type": "link",
       "path": "https://github.bus.zalan.do/stargate/hexo-stargate-doc-theme-seed/issues/new"
-    }
+    },
+    {
+      "text": "case",
+      "type": "label"
+    },
+    {
+      "text": "input",
+      "type": "link",
+      "path": "case/input.html"
+    },
   ]
 }
