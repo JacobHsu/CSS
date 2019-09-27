@@ -1,8 +1,11 @@
-# CSS <input>寬度不超過<div>
+title: input html
+---
 
-[CSS <input>寬度不超過<div>](https://matthung0807.blogspot.com/2017/11/css.html)  
+# CSS `<input>`寬度不超過`<div>`
 
+[CSS `<input>`寬度不超過`<div>`](https://matthung0807.blogspot.com/2017/11/css.html)  
 
+input limit width  
 ```css
 <style lang="scss">
 @mixin input-style(
