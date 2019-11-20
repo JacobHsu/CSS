@@ -6,9 +6,18 @@ title: Position
 
 `static（靜態定位）`：默認值。沒有定位，元素出現在正常的流中（忽略 top, bottom, left, right 或者 z-index 聲明）。
 
-static 是預設值。任何套用 position: static; 的元素「不會被特別定位」在頁面上特定位置，而是照著瀏覽器預設的配置自動排版在頁面上，所有其他的屬性值都代表該元素會被定位在頁面上。
+static 是預設值。任何套用 position: static; 的元素「不會被特別定位」在頁面上特定位置，而是照著瀏覽器預設的配置自動排版在頁面上，所有其他的屬性值都代表該元素會被定位在頁面上。  
+
+注意，`static`定位所導致的元素位置，是瀏覽器自主決定的，所以這時`top`、`bottom`、`left`、`right`這四個屬性無效。  
+
+# relative，absolute，fixed
+
+`relative`、`absolute`、`fixed` 這三個屬性值有一個共同點，都是相對於某個基點的定位，不同之處僅僅在於基點不同。
 
 ## relative
+
+定位基點是元素的默認位置。
+它必須搭配`top`、`bottom`、`left`、`right`這四個屬性一起使用，用來指定偏移的方向和距離。
 
 `relative（相對定位）` 生成相對定位的元素，通過`top,right,bottom,left`的設置相對於其正常（原先本身）位置進行定位。可通過`z-index`進行層次分級。　
 
@@ -24,11 +33,39 @@ static 是預設值。任何套用 position: static; 的元素「不會被特別
 
 ## fixed
 
+相對於視口（viewport，瀏覽器窗口）進行偏移，即定位基點是**瀏覽器窗口**。這會導致元素的位置不隨頁面滾動而變化，好像固定在網頁上一樣。  
+
+如果搭配top、bottom、left、right這四個屬性一起使用，表示元素的初始位置是基於視口計算的，否則初始位置就是元素的默認位置。
+
 `fixed（固定定位）`的元素會相對於**瀏覽器視窗**來定位，這意味著即便頁面捲動，它還是會固定在相同的位置。和 relative 一樣，我們會使用`top,right,bottom,left`屬性來定位。
 
 應用 可用於 banner關閉按鈕
 
 ## absolute
+
+相對於上級元素（一般是父元素）進行偏移，即定位基點是父元素。
+重要的限制條件：定位基點（一般是父元素）不能是static定位，否則定位基點就會變成整個網頁的根元素html。另外，absolute定位也必須搭配`top`、`bottom`、`left`、`right`這四個屬性一起使用。  
+
+```css
+/*
+  HTML 代碼如下
+  <div id="father">
+    <div id="son"></div>
+  </div>
+*/
+
+#father {
+  positon: relative;
+}
+#son {
+  position: absolute;
+  top: 20px;
+}
+```
+
+上面代碼中，父元素是`relative`定位，子元素是absolute定位，所以子元素的定位基點是父元素，相對於父元素的頂部向下偏移20px。如果父元素是`static`定位，上例的子元素就是距離網頁的頂部向下偏移20px。  
+
+注意，absolute定位的元素會被"正常頁面流"忽略，即在"正常頁面流"中，該元素所佔空間為零，周邊元素不受影響。  
 
 `absolute（絕對定位）`：生成絕對定位的元素，相對於 **static 定位以外的第一個父元素**進行定位。元素的位置通過`top,bottom,left,right`屬性進行規定。可通過`z-index`進行層次分級。
 
@@ -102,5 +139,36 @@ static 是預設值。任何套用 position: static; 的元素「不會被特別
 }
 ```
 
+# sticky  
+
+sticky跟前面四個屬性值都不一樣，它會產生動態效果，很像relative和fixed的結合：一些時候是relative定位（定位基點是自身默認位置），另一些時候自動變成fixed定位（定位基點是視口）。
+
+因此，它能夠形成"動態固定"的效果。
+比如，網頁的搜索工具欄，初始加載時在自己的默認位置（`relative`定位）。  
+頁面向下滾動時，工具欄變成固定位置，始終停留在頁面頭部（`fixed`定位） 
+等到頁面重新向上滾動回到原位，工具欄也會回到默認位置  
+
+注意，除了已被淘汰的 IE 以外，其他瀏覽器目前都支持`sticky`。但是，Safari 瀏覽器需要加上瀏覽器前綴`-webkit-`。
+
+
+```css
+#toolbar {
+  position: -webkit-sticky; /* safari 瀏覽器 */
+  position: sticky; /* 其他瀏覽器 */
+  top: 20px;
+}
+```
+
+頁面向下滾動時，#toolbar的父元素開始脫離視口，一旦視口的頂部與#toolbar的距離小於20px（門檻值），#toolbar就自動變為fixed定位，保持與視口頂部20px的距離。頁面繼續向下滾動，父元素徹底離開視口（即整個父元素完全不可見），#toolbar恢復成relative定位。  relative-fixed-relative  
+
+### sticky 的應用
+
+瀏覽器工具列 "動態固定"   
+[圖片堆疊](https://jsbin.com/fegiqoquki/edit?html,css,output)  
+[表格的表頭鎖定](https://jsbin.com/decemanohe/edit?html,css,output)  
+
+# Referneces
+
 [學習 CSS 版面配置](http://zh-tw.learnlayout.com/position.html)  
 [10步掌握CSS定位](http://www.see-design.com.tw/i/css_position.html)  
+[CSS 定位详解](http://www.ruanyifeng.com/blog/2019/11/css-position.html)
