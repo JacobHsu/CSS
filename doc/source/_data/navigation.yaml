@@ -25,6 +25,15 @@
       "path": "position.html"
     },
     {
+      "text": "image",
+      "type": "label"
+    },
+    {
+      "text": "CSS Align",
+      "type": "link",
+      "path": "image/center.html"
+    },
+    {
       "text": "Display",
       "type": "link",
       "path": "display.html"
