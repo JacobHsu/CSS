@@ -5,6 +5,8 @@
 
 # hexo
 
+`$ hexo s`
+
 [hexo-theme-doc-seed](https://github.com/zalando-incubator/hexo-theme-doc-seed)  
 `git clone https://github.com/zalando-incubator/hexo-theme-doc-seed.git`  
 remove dir `.git`  

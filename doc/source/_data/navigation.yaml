@@ -102,6 +102,11 @@
       "type": "label"
     },
     {
+      "text": "background",
+      "type": "link",
+      "path": "case/background.html"
+    },
+    {
       "text": "input",
       "type": "link",
       "path": "case/input.html"
