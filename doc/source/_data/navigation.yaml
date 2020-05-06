@@ -107,6 +107,11 @@
       "path": "case/background.html"
     },
     {
+      "text": "footer",
+      "type": "link",
+      "path": "case/footer.html"
+    },
+    {
       "text": "input",
       "type": "link",
       "path": "case/input.html"
