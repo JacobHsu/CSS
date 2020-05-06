@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>hello css | display </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/CSS/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/CSS/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"title":"display","path":"display.html"},"data":{"navigation":{"logo":{"text":"Hello CSS","type":"link","path":"index.html"},"main":[{"text":"SWAGGER","type":"label"},{"text":"UI","type":"link","path":"swagger/ui.html"},{"text":"Tutorial","type":"link","path":"tutorial.html"},{"text":"Position","type":"link","path":"position.html"},{"text":"image","type":"label"},{"text":"CSS Align","type":"link","path":"image/center.html"},{"text":"Display","type":"link","path":"display.html"},{"text":"Align","type":"link","path":"align.html"},{"text":"Scss","type":"link","path":"scss.html"},{"text":"vertical-align","type":"link","path":"swagger/vertical-align.html"},{"text":"Flex","type":"link","path":"flex.html"},{"text":"Font","type":"link","path":"font.html"},{"text":"MDN","type":"link","path":"MDN.html"},{"text":"QA","type":"link","path":"qa.html"},{"text":"Font Awesome","type":"link","path":"fontawesome.html"},{"text":"Bootstrap","type":"link","path":"bootstrap.html"},{"text":"Tool","type":"link","path":"tools.html"},{"text":"SUPPORT AND FEEDBACK","type":"label"},{"text":"Raise an Issue on Github","type":"link","path":"https://github.bus.zalan.do/stargate/hexo-stargate-doc-theme-seed/issues/new"},{"text":"case","type":"label"},{"text":"background","type":"link","path":"case/background.html"},{"text":"footer","type":"link","path":"case/footer.html"},{"text":"input","type":"link","path":"case/input.html"}]}},"config":{"timezone":"UTC","root":"/CSS/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/CSS/index.html" class="doc-navbar__logo"><img src="/CSS/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Hello CSS</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h2 id="display-none"><a href="#display-none" class="headerlink" title="display : none"></a>display : none</h2><p>把 HTML 元件的 display 設為 none 就是不顯示這個東西。 </p>
+<p><code>display : none</code> 和 <code>visibility : hidden</code> 的差別是 </p>
+<p><code>display : none</code> 這個東西就不見了，不佔空間，<br><code>visibility : hidden</code> 只是隱形看不見，還是有佔空間。</p>
+<h2 id="display-inline"><a href="#display-inline" class="headerlink" title="display : inline"></a>display : inline</h2><p><code>&lt;a&gt; 、 &lt;span&gt; 、 &lt;b&gt; 、 &lt;i&gt; 、 &lt;img&gt; 、 &lt;iframe&gt;</code> …<br>這幾個 HTML 元素預設的 display 屬性是 inline ，</p>
+<p>用最簡單的講法解釋 <code>display : inline</code><br>就是兩個 <code>display : inline</code> 的<strong>元素連在一起會在同一行，不會換行</strong>。</p>
+<p>附帶一提，<code>display : inline</code> 元素不該包住 <code>display : block</code>元素。</p>
+<h2 id="display-block"><a href="#display-block" class="headerlink" title="display : block"></a>display : block</h2><p><div> 、 <p> 、 </p><h1> 、 <h2> …<br>這幾種 HTML 元素預設的 display 屬性是 block，</h2></h1></div></p>
+<p>簡單講就是不管 <code>display : block</code> 元素的前面後面是什麼，<br>碰到 <code>display : block</code> 元素就是<strong>會換行</strong>，而 <code>display : block</code> 元素的寬度預設會撐到最大。</p>
+<p>要將 display : block 元素水平置中，方法是在此元素加上 `margin: 0 auto;</p>
+<h2 id="display-inline-block"><a href="#display-inline-block" class="headerlink" title="display : inline-block"></a>display : inline-block</h2><p>inline-block顧名思義就是兩種性質都來一點。<br>它的外在是 inline 內在是 block，</p>
+<p>外在像<code>inline</code>不會換行且會自適應大小，<br>內在像<code>block</code>可以設定<code>width、height、margin、background-img</code>…等參數。</p>
+<p>用 CSS 讓連結用圖片顯示就是 <code>inline-block</code> 常見的應用。</p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/CSS/script/doc.js"></script>
+
+    
+
+  </body>
+</html>

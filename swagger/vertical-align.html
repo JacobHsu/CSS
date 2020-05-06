@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+
+    <title>hello css | 垂直置中 </title>
+    <meta name="description" content>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+    <!-- fonts -->
+    <link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700" rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="/CSS/style/doc.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="/CSS/images/favicon.ico">
+
+    
+
+  </head>
+  <body>
+
+   <script>window.__INITIAL_STATE__ = {"page":{"title":"垂直置中","path":"swagger/vertical-align.html"},"data":{"navigation":{"logo":{"text":"Hello CSS","type":"link","path":"index.html"},"main":[{"text":"SWAGGER","type":"label"},{"text":"UI","type":"link","path":"swagger/ui.html"},{"text":"Tutorial","type":"link","path":"tutorial.html"},{"text":"Position","type":"link","path":"position.html"},{"text":"image","type":"label"},{"text":"CSS Align","type":"link","path":"image/center.html"},{"text":"Display","type":"link","path":"display.html"},{"text":"Align","type":"link","path":"align.html"},{"text":"Scss","type":"link","path":"scss.html"},{"text":"vertical-align","type":"link","path":"swagger/vertical-align.html"},{"text":"Flex","type":"link","path":"flex.html"},{"text":"Font","type":"link","path":"font.html"},{"text":"MDN","type":"link","path":"MDN.html"},{"text":"QA","type":"link","path":"qa.html"},{"text":"Font Awesome","type":"link","path":"fontawesome.html"},{"text":"Bootstrap","type":"link","path":"bootstrap.html"},{"text":"Tool","type":"link","path":"tools.html"},{"text":"SUPPORT AND FEEDBACK","type":"label"},{"text":"Raise an Issue on Github","type":"link","path":"https://github.bus.zalan.do/stargate/hexo-stargate-doc-theme-seed/issues/new"},{"text":"case","type":"label"},{"text":"background","type":"link","path":"case/background.html"},{"text":"footer","type":"link","path":"case/footer.html"},{"text":"input","type":"link","path":"case/input.html"}]}},"config":{"timezone":"UTC","root":"/CSS/","time_format":"HH:mm:ss","theme":"../node_modules/hexo-theme-doc","theme_config":{"swagger_ui":{"version":2,"permalinks":true,"api_explorer":true,"download":"Download specification","show_extensions":false,"deep_linking":true,"display_operation_id":false,"doc_expansion":"none"},"search":{"skip":false,"background":false,"route":"/lunr.json"},"favicon":"images/favicon.ico"}}}</script>
+
+    <div id="react-navigation-root"><div class="doc-navigation" data-reactroot><nav class="doc-navbar"><a href="/CSS/index.html" class="doc-navbar__logo"><img src="/CSS/images/logo.png" class="doc-navbar__logo__img"><span class="doc-navbar__logo__text">Hello CSS</span></a><i class="dc-icon dc-icon--close dc-icon--interactive doc-sidebar-close doc-navbar__sidebar-close doc-navbar__sidebar-close--desktop"></i><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-navbar__sidebar-toggle"></i></nav><nav class="doc-sidebar"><div class="doc-sidebar__vertical-menu"><i class="dc-icon dc-icon--menu dc-icon--interactive doc-sidebar-toggle doc-sidebar-toggle--primary doc-sidebar__vertical-menu__item"></i><i class="dc-icon dc-icon--search dc-icon--interactive doc-sidebar__vertical-menu__item doc-sidebar__vertical-menu__item--primary"></i></div><div class="doc-sidebar-content"><div class="doc-sidebar__search-form"></div><ul class="doc-sidebar-list"></ul></div></nav></div></div>
+    <div class="doc-content">
+  <div class="dc-page">
+    <div class="dc-card">
+      <div id="react-search-results-root"></div>
+      <div id="page-content" class="doc-formatting">
+        <h2 id="使用-Flexbox"><a href="#使用-Flexbox" class="headerlink" title="使用 Flexbox"></a>使用 Flexbox</h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">display</span><span class="selector-pseudo">:flex</span>;   </span><br><span class="line"><span class="selector-tag">align-items</span><span class="selector-pseudo">:center</span>;</span><br><span class="line"><span class="selector-tag">justify-content</span><span class="selector-pseudo">:center</span>;</span><br></pre></td></tr></table></figure>
+<p><a href="https://jsbin.com/ticuyivabi/edit?html,css,output" target="_blank" rel="noopener">https://jsbin.com/ticuyivabi/edit?html,css,output</a><br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.use-flexbox</span>&#123;</span><br><span class="line">    <span class="attribute">display</span>:flex;</span><br><span class="line">    <span class="attribute">align-items</span>:center;</span><br><span class="line">    <span class="attribute">justify-content</span>:center;</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">150px</span>;</span><br><span class="line">    <span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.use-flexbox</span> <span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">background</span>:<span class="number">#099</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="絕對定位"><a href="#絕對定位" class="headerlink" title="絕對定位"></a>絕對定位</h2><p><code>position:absolute</code><br>將上下左右的數值都設為 0，再搭配一個<code>margin:auto</code><br>其父元素的 position 必須要指定為 <code>relative</code> </p>
+<p><a href="https://jsbin.com/dunejehako/1/edit?html,css,output" target="_blank" rel="noopener">https://jsbin.com/dunejehako/1/edit?html,css,output</a></p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.use-absolute</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>: relative;</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">200px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">150px</span>;</span><br><span class="line">    <span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#000</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.use-absolute</span> <span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">width</span>:<span class="number">100px</span>;</span><br><span class="line">    <span class="attribute">height</span>:<span class="number">50px</span>;</span><br><span class="line">    <span class="attribute">top</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">right</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">bottom</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">left</span>:<span class="number">0</span>;</span><br><span class="line">    <span class="attribute">margin</span>:auto;</span><br><span class="line">    <span class="attribute">background</span>:<span class="number">#f60</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>absolute + translate</p>
+<p>此置中的定位物件不需要固定的寬跟高，<br>我們利用絕對定位時的left跟top設定物件的上方跟左方各都為50%，<br>再利用 <code>translate(-50%, -50%)</code> 位移置中物件自身寬與高的 50% 就能達成置中的目的了。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.use-absolute</span> <span class="selector-tag">div</span>&#123;</span><br><span class="line">    <span class="attribute">position</span>: absolute;</span><br><span class="line">    <span class="attribute">top</span>:<span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">left</span>: <span class="number">50%</span>;</span><br><span class="line">    <span class="attribute">transform</span>: <span class="built_in">translate</span>(-<span class="number">50%</span>, -<span class="number">50%</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="examples"><a href="#examples" class="headerlink" title="examples"></a>examples</h3><p><a href="https://jsbin.com/yisulifovu/edit?html,css,output" target="_blank" rel="noopener">https://jsbin.com/yisulifovu/edit?html,css,output</a></p>
+<h4 id="Rerences"><a href="#Rerences" class="headerlink" title="Rerences"></a>Rerences</h4><p><a href="https://www.oxxostudio.tw/articles/201502/css-vertical-align-7methods.html" target="_blank" rel="noopener">https://www.oxxostudio.tw/articles/201502/css-vertical-align-7methods.html</a><br><a href="https://www.oxxostudio.tw/articles/201501/css-flexbox.html" target="_blank" rel="noopener">https://www.oxxostudio.tw/articles/201501/css-flexbox.html</a><br><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank" rel="noopener">https://css-tricks.com/snippets/css/a-guide-to-flexbox/</a><br><a href="http://csscoke.com/2018/08/21/css-vertical-align/" target="_blank" rel="noopener">http://csscoke.com/2018/08/21/css-vertical-align/</a><br><a href="http://zh-tw.learnlayout.com/position.html" target="_blank" rel="noopener">http://zh-tw.learnlayout.com/position.html</a><br><a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/position" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/CSS/position</a></p>
+
+        <div id="react-support-footer-root"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+
+    
+
+    <!-- js vendors -->
+    <script src="//code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.0/lunr.min.js"></script>
+
+    <!-- js source  -->
+    <script src="/CSS/script/doc.js"></script>
+
+    
+
+  </body>
+</html>
