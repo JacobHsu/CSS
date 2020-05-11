@@ -125,5 +125,14 @@
       "type": "link",
       "path": "case/input.html"
     },
+    {
+      "text": "box",
+      "type": "label"
+    },
+    {
+      "text": "margin collapsing",
+      "type": "link",
+      "path": "box/margin_collapsing.html"
+    },
   ]
 }
