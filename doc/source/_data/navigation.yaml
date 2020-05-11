@@ -98,6 +98,15 @@
       "path": "https://github.bus.zalan.do/stargate/hexo-stargate-doc-theme-seed/issues/new"
     },
     {
+      "text": "layout",
+      "type": "label"
+    },
+    {
+      "text": "three-column",
+      "type": "link",
+      "path": "layout/three-column.html"
+    },
+    {
       "text": "case",
       "type": "label"
     },

@@ -29,6 +29,8 @@ deploy:
 
 ## Note
 
+`hexo s`  
+
 `$hexo d` ERROR Deployer not found: git  
 > npm install hexo-deployer-git --save  
 
