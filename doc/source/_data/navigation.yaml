@@ -49,6 +49,11 @@
       "path": "scss.html"
     },
     {
+      "text": "Less",
+      "type": "link",
+      "path": "less.html"
+    },
+    {
       "text": "vertical-align",
       "type": "link",
       "path": "swagger/vertical-align.html"
@@ -82,6 +87,11 @@
       "text": "Font Awesome",
       "type": "link",
       "path": "fontawesome.html"
+    },
+    {
+      "text": "animations",
+      "type": "link",
+      "path": "animations.html"
     },
     {
       "text": "Bootstrap",
