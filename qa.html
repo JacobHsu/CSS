@@ -32,8 +32,45 @@
     <div class="dc-card">
       <div id="react-search-results-root"></div>
       <div id="page-content" class="doc-formatting">
-        <p>網頁文字單位，px、em、rem、% 的差別</p>
-<p>哪一個是絕對單位？哪一個是相對單位？<br>px 是絕對單位；<br>em 是相對單位，其文字大小是相對於父元素 (parent element)；<br>rem 是相對單位，其文字大小是相對於根元素 (root element)，根元素就是 <html> 標籤</html></p>
+        <p>圖片格式</p>
+<p>前端的圖片分類格式,其實是性能優化的很大部分。選擇好圖片的類型，對前端的性能影響非常大</p>
+<table>
+<thead>
+<tr>
+<th>圖片類型</th>
+<th>介紹</th>
+<th>使用場景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>png</td>
+<td>適合顏色簡單，但是對圖片質量比較高。日常用的png8，此外還有png32</td>
+<td>適合logo體積太大一般不用</td>
+</tr>
+<tr>
+<td>jpeg</td>
+<td>不影響圖片質量的情況有損壓縮，banner圖。適合大圖。</td>
+<td>壓縮後大小可省略很多，一般大圖使用</td>
+</tr>
+<tr>
+<td>svg</td>
+<td>對性能有損耗，體積小，壓縮性搶。可在質量不下降的過程被放大</td>
+<td>部分瀏覽器兼容性不太好</td>
+</tr>
+<tr>
+<td>webp</td>
+<td>只針對谷歌，兼容性不好。圖片大小能壓縮30~40%。</td>
+<td>谷歌瀏覽器用，如有非常注重性能的產品，可判斷瀏覽器加載不同類型圖片</td>
+</tr>
+<tr>
+<td>base64</td>
+<td>壓縮成字符流，實際大小是變大了，但是好處就是減少了http請求</td>
+<td>一般也針對小圖標</td>
+</tr>
+</tbody>
+</table>
+<h2 id="網頁文字單位，px、em、rem、-的差別"><a href="#網頁文字單位，px、em、rem、-的差別" class="headerlink" title="網頁文字單位，px、em、rem、% 的差別"></a>網頁文字單位，px、em、rem、% 的差別</h2><p>哪一個是絕對單位？哪一個是相對單位？<br>px 是絕對單位；<br>em 是相對單位，其文字大小是相對於父元素 (parent element)；<br>rem 是相對單位，其文字大小是相對於根元素 (root element)，根元素就是 <html> 標籤</html></p>
 <h2 id="保持正圓或正方形的圖片"><a href="#保持正圓或正方形的圖片" class="headerlink" title="保持正圓或正方形的圖片"></a><a href="https://zoneless.blog/2017/06/17/css-responsive-circle-or-square-image/" target="_blank" rel="noopener">保持正圓或正方形的圖片</a></h2><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.img-circle</span>&gt;<span class="selector-tag">img</span>&#123;    </span><br><span class="line">    <span class="attribute">width</span>: <span class="number">100%</span> <span class="meta">!important</span>;		</span><br><span class="line">    <span class="attribute">height</span>: <span class="number">100%</span> <span class="meta">!important</span>;		</span><br><span class="line">    <span class="attribute">object-fit</span>: cover;	</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="html-img圖片不變形等比例縮放-兼容ie6"><a href="#html-img圖片不變形等比例縮放-兼容ie6" class="headerlink" title="html img圖片不變形等比例縮放,兼容ie6"></a><a href="https://blog.csdn.net/Lpandeng/article/details/72520631" target="_blank" rel="noopener">html img圖片不變形等比例縮放,兼容ie6</a></h2><p>需要設置好寬度限制,如<code>max-width:300px</code><br>然後對父級使用<code>overflow:hidden</code>隱藏溢出圖片  </p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.divcss</span>&#123; <span class="attribute">border</span>:<span class="number">1px</span> solid <span class="number">#000</span>; <span class="attribute">width</span>:<span class="number">300px</span>; <span class="attribute">height</span>:<span class="number">100px</span>; <span class="attribute">overflow</span>:hidden&#125; </span><br><span class="line"><span class="selector-class">.divcss</span> <span class="selector-tag">img</span>&#123;<span class="attribute">max-width</span>:<span class="number">300px</span>;&#125;</span><br></pre></td></tr></table></figure>
