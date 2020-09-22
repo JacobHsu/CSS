@@ -141,6 +141,11 @@
       "path": "case/input.html"
     },
     {
+      "text": "border",
+      "type": "link",
+      "path": "case/border.html"
+    },
+    {
       "text": "box",
       "type": "label"
     },
