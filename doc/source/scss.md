@@ -60,3 +60,31 @@ vue
     }
   }
 ```
+
+## mixin
+
+[@mixin and @include](https://sass-lang.com/documentation/at-rules/mixin)
+
+```css
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin horizontal-list {
+  @include reset-list;
+
+  li {
+    display: inline-block;
+    margin: {
+      left: -2px;
+      right: 2em;
+    }
+  }
+}
+
+nav ul {
+  @include horizontal-list;
+}
+```
