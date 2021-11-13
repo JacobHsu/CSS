@@ -150,6 +150,9 @@ sticky跟前面四個屬性值都不一樣，它會產生動態效果，很像re
 
 注意，除了已被淘汰的 IE 以外，其他瀏覽器目前都支持`sticky`。但是，Safari 瀏覽器需要加上瀏覽器前綴`-webkit-`。
 
+sticky：`粘性定位`，該定位基於用戶滾動的位置。當元素在屏幕內，它的行為就像 `position:relative;`， 而當頁面滾動超出目標區域時，它的表現就像 `position:fixed;`，它會固定在目標位置。
+`position:sticky`實現的驚豔吸頂效果可點擊[這裡](https://www.zhangxinxu.com/study/201812/position-sticky-demo.php)
+
 
 ```css
 #toolbar {
